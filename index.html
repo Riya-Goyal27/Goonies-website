@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- awwwards -->
+        <div class="awwwards">
+            <div class="awwwards__container">
+                <p class="awwwards__container--logo">W</p>
+                <p class="awwwards__container--text">Site of the Day</p>
+            </div>
+        </div>
+
+        <!-- skull -->
+        <div class="skull">
+            <img src="images/5d1ccf5390704ad21f992d8e_skull-p-500.png" alt="skull" class="skull__icon">
+            <img src="images/5d1ccf5390704ad21f992d8e_skull-p-500.png" alt="skull" class="skull__icon">
+        </div>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__list--item">
+                    <a href="#plot" class="navbar__list--link navbar__plot">Plot</a>
+                    <div class="navbar__list--dot"></div>
+                </li>
+                <li class="navbar__list--item">
+                    <a href="#goonies" class="navbar__list--link">Goonies</a>
+                    <div class="navbar__list--dot hide"></div>
+                </li>
+                <li class="navbar__list--item">
+                    <a href="#credits" class="navbar__list--link">Credits</a>
+                    <div class="navbar__list--dot hide"></div>
+                </li>
+                <li class="navbar__list--item">
+                    <a href="#gallery" class="navbar__list--link">Gallery</a>
+                    <div class="navbar__list--dot hide"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- audio -->
+        <div class="audioplayer">
+            
+
+            <div class="audioplayer__head">
+                <div class="audioplayer__btn">
+                    <i class="fa-solid fa-play audioplayer__btn--icon"></i>
+                </div>
+                <h3 class="audioplayer__text">The Goonies...</h3>
+            </div>
+
+            <!-- <audio class="audioplayer__music" autoplay>
+                <source src="speakerAudio.mp3">
+              </audio> -->
+
+            <div class="audioplayer__bar">
+                <div class="waveform" id="waveform"></div>
+                <!-- <div class="audioplayer__bar--noprogress"></div> -->
+                <!-- <div class="audioplayer__bar--progress"></div> -->
+                <div class="audioplayer__bar--curr">0:00</div>
+                <div class="audioplayer__bar--total">3:42</div>
+            </div>
+
+            <div class="audioplayer__controls">
+                <div class="audioplayer__volume">
+                    <i class="fa-solid fa-volume-high audioplayer__volume--icon"></i>
+                    <div class="audioplayer__volume--length"></div>
+                    <div class="audioplayer__volume--length currlength"></div>
+                </div>
+                <div class="audioplayer__skip">
+                    <i class="fa-solid fa-backward audioplayer__skip--back"></i>
+                    <i class="fa-solid fa-forward audioplayer__skip--forw"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- music -->
+        <div class="music">
+            <img src="images/5d10efb50442bf42883dc80d_speaker-icon.png" alt="music" class="music__icon">
+            <img src="images/5d10efb50442bf42883dc80d_speaker-icon.png" alt="music" class="music__icon music__icon--click">
+        </div>
+
+        <!-- loader -->
+        <div class="loader">
+            <div class="loader__main"><span class="loader__counter"></span>%</div>
+            <div class="loader__block">
+                <div class="loader__block--text">Loading</div>
+                <div class="loader__block--dot"></div>
+            </div>
+            <div class="loader__bar">
+                <div class="loader__bar--line"></div>
+            </div>
+        </div>
+
+        <!-- home -->
+        <div class="home" id="home">
+            <div class="home__container">
+                <img src="images/5d00043816a6c695bcf1581a_scroll.gif" alt="scroll" class="home__scrollicon">
+                <div class="home__overlay"></div>
+                <div class="home__bg"></div>
+                <div class="home__bgimage"></div>
+                <div class="home__hero">
+                    <p class="home__hero--title">The story of</p>
+                    <img src="images/5cffeb65d43eb732944316c4_logo.png" alt="hero" class="home__hero--logo">
+                </div>
+                <div class="home__intro" id="plot">
+                    <h1 class="home__intro--title">Plot</h1>
+                    <p class="home__intro--text">Facing foreclosure of their homes in the Goon Docks area of Astoria, Oregon to an expanding country club, a group of children who call themselves "the Goonies" gather for a final weekend together.</p>
+                    <div class="home__line">
+                        <div class="home__line--draw"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- goonies -->
+        <div class="goonies" id="goonies">
+            <div class="goonies__list">
+                <div class="goonies__item">
+                    <div class="goonies__item--overlay"></div>
+                    <div class="goonies__item--image mickey-image"></div>
+                    <div class="goonies__item--content">
+                        <h2 class="goonies__item--name">Mickey</h2>
+                        <div class="goonies__item--btn">
+                            <a href="#" class="goonies__item--link">More Info</a>
+                            <img src="images/5d00256012408bddc81a0512_arrow.png" alt="arrow" class="goonies__item--icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="goonies__item">
+                    <div class="goonies__item--overlay"></div>
+                    <div class="goonies__item--image chunk-image"></div>
+                    <div class="goonies__item--content">
+                        <h2 class="goonies__item--name">Chunk</h2>
+                        <div class="goonies__item--btn">
+                            <a href="#" class="goonies__item--link">More Info</a>
+                            <img src="images/5d00256012408bddc81a0512_arrow.png" alt="arrow" class="goonies__item--icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="goonies__item">
+                    <div class="goonies__item--overlay"></div>
+                    <div class="goonies__item--image data-image"></div>
+                    <div class="goonies__item--content">
+                        <h2 class="goonies__item--name">Data</h2>
+                        <div class="goonies__item--btn">
+                            <a href="#" class="goonies__item--link">More Info</a>
+                            <img src="images/5d00256012408bddc81a0512_arrow.png" alt="arrow" class="goonies__item--icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="goonies__item">
+                    <div class="goonies__item--overlay"></div>
+                    <div class="goonies__item--image mouth-image"></div>
+                    <div class="goonies__item--content">
+                        <h2 class="goonies__item--name">Mouth</h2>
+                        <div class="goonies__item--btn">
+                            <a href="#" class="goonies__item--link">More Info</a>
+                            <img src="images/5d00256012408bddc81a0512_arrow.png" alt="arrow" class="goonies__item--icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- coins -->
+        <div class="coins">
+            <div class="coins__content">
+                <h1 class="coins__content--text">Goonies Never Say Die</h1>
+            </div>
+            <img src="images/coin1.png" alt="coin1" class="coins__image1">
+            <img src="images/coin2.png" alt="coin2" class="coins__image2">
+            <img src="images/coin3.png" alt="coin3" class="coins__image3">
+            <img src="images/coin4.png" alt="coin4" class="coins__image4">
+            <img src="images/coin5.png" alt="coin5" class="coins__image5">
+        </div>
+
+        <!-- credits -->
+        <div class="credits" id="credits">
+            <div class="credits__container">
+                <div class="credits__grid">
+                    <!-- grid 1 -->
+                    <div class="credits__date">
+                        <div class="credits__date--position">
+                            <div class="credits__date--content">
+                                <h2 class="credits__date--year">1985</h2>
+                                <h2 class="credits__date--year">1985</h2>
+                            </div>
+                        </div>
+                        <h3 class="credits__date--title credit__textup">Release date</h3>
+                        <div class="credits__date--text credit__textup">June 7, 1985</div>
+                    </div>
+                    <!-- grid 2 -->
+                    <div class="credits__story">
+                        <div class="credits__story--image"></div>
+                        <h3 class="credits__story--title">Story by</h3>
+                        <div class="credits__story--text">Steven Spielberg</div>
+                    </div>
+                    <!-- grid 3 -->
+                    <div class="credits__production">
+                        <div class="credits__production--content">
+                            <img src="images/credits2.png" alt="credits2" class="credits__production--image">
+                        </div>
+                        <h3 class="credits__production--title">Production</h3>
+                        <div class="credits__production--text">Amblin Entertainment</div>
+                    </div>
+                    <!-- grid 4 -->
+                    <div class="credits__dist">
+                        <div class="credits__dist--content">
+                            <img src="images/credits3.png" alt="credits3" class="credits__dist--image">
+                        </div>
+                        <h3 class="credits__dist--title">Distributed by</h3>
+                        <div class="credits__dist--text">Warner Bros</div>
+                    </div>
+
+                    <!-- grid 5 -->
+                    <div class="credits__budget">
+                        <div class="credits__budget--position">
+                            <div class="credits__budget--parent">
+                                <h2 class="credits__budget--content">$19M</h2>
+                                <h2 class="credits__budget--content">$19M</h2>
+                            </div>
+                        </div>
+                        <h3 class="credits__budget--title">Budget</h3>
+                        <div class="credits__budget--text">$19 Million</div>
+                    </div>
+
+                    <!-- grid 6 -->
+                    <div class="credits__music">
+                        <div class="credits__music--content">
+                            <img src="images/credit4.jpg" alt="credit4" class="credits__music--image">
+                        </div>
+                        <h3 class="credits__music--title">Music by</h3>
+                        <div class="credits__music--text">Dave Grusin</div>
+                    </div>
+                    <!-- grid 7 -->
+                    <div class="credits__box">
+                        <div class="credits__box--position">
+                            <div class="credits__box--parent">
+                                <h2 class="credits__box--content">$61M</h2>
+                                <h2 class="credits__box--content">$61M</h2>
+                            </div>
+                        </div>
+                        <h3 class="credits__box--title">Box Office</h3>
+                        <div class="credits__box--text">$61 Million</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- skull-block -->
+        <div class="skullblock">
+            <img src="images/5d1ccf5390704ad21f992d8e_skull-p-500.png" alt="skull" class="skullblock__skull">
+            <img src="images/5d25e8040574eeecaa75cbdd_last-part.png" alt="last" class="skullblock__last">
+        </div>
+
+        <!-- gallery -->
+        <div class="gallery" id="gallery">
+            <div class="gallery__container">
+                <div class="gallery__parent">
+                    <div class="gallery__parent--gird">
+                        <div class="gallery__parent--girdline"></div>
+                    </div>
+                    <div class="gallery__parent--gird">
+                        <div class="gallery__parent--girdline"></div>
+                    </div>
+                    <div class="gallery__parent--gird">
+                        <div class="gallery__parent--girdline"></div>
+                    </div>
+                    <div class="gallery__parent--gird"></div>
+                </div>
+                <div class="gallery__text">
+                    <h2 class="gallery__text--head">Gallery</h2>
+                    <div class="gallery__text--view">View Gallery</div>
+                </div>
+                <div class="gallery__grid">
+                    <div class="gallery__grid--image1 gallery__image hideview1"></div>
+                    <div class="gallery__grid--image2 gallery__image hideview2"></div>
+                    <div class="gallery__grid--image3 gallery__image hideview3"></div>
+                    <div class="gallery__grid--image4 gallery__image hideview4"></div>
+                    <div class="gallery__grid--image5 gallery__image hideview5"></div>
+                    <div class="gallery__grid--image6 gallery__image hideview6"></div>
+                    <div class="gallery__grid--image7 gallery__image hideview7"></div>
+                    <div class="gallery__grid--image8 gallery__image hideview8"></div>
+                    <div class="gallery__grid--image9 gallery__image hideview9"></div>
+                    <div class="gallery__grid--image10 gallery__image hideview10"></div>
+                    <div class="gallery__grid--image11 gallery__image hideview11"></div>
+                </div>
+                <a href="#" class="gallery__link">
+                    <div class="gallery__link--text">Share</div>
+                </a>
+            </div>
+        </div>
+        <!-- share -->
+        <div class="share">
+            <div class="share__copyright">Created By Riya Goyal - Webflow</div>
+            <div class="share__content">
+                <div class="share__content--info">Share this experience</div>
+                <h1 class="share__content--text">the-goonies.webflow.io</h1>
+                <div class="share__content--back">
+                    <a href="#home" class="share__content--link">Back to top</a>
+                </div>
+            </div>
+            <div class="share__line">
+                <div class="share__line--draw"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>   
+    <script src="script.js"></script>
+
+</body>
+</html>
